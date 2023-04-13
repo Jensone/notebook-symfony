@@ -155,6 +155,6 @@ class __TwigTemplate_f6cd84a73e379a2fa173a40f759c7338 extends Template
 {% block panel %}
     {{ render(controller('web_profiler.controller.router::panelAction', { token: token })) }}
 {% endblock %}
-", "@WebProfiler/Collector/router.html.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
+", "@WebProfiler/Collector/router.html.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Collector/router.html.twig");
     }
 }

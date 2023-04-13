@@ -734,6 +734,6 @@ class __TwigTemplate_73f6874e19a419265e08f883c78be43d extends Template
         </div>
     </div>
 {% endmacro %}
-", "@WebProfiler/Collector/cache.html.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Collector/cache.html.twig");
+", "@WebProfiler/Collector/cache.html.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Collector/cache.html.twig");
     }
 }

@@ -69,6 +69,6 @@ class __TwigTemplate_8b5571d23287eba2a732490672f2016e extends Template
     <path stroke=\"none\" d=\"M0 0h24v24H0z\" fill=\"none\"></path>
     <path d=\"M5 12l5 5l10 -10\"></path>
 </svg>
-", "@WebProfiler/Icon/yes.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/yes.svg");
+", "@WebProfiler/Icon/yes.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/yes.svg");
     }
 }

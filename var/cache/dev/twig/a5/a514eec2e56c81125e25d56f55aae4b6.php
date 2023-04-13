@@ -195,6 +195,6 @@ class __TwigTemplate_e32539a9edabfcd7a600023ced2be3d8 extends Template
 .timeline-graph .timeline-period {
     stroke-width: 0;
 }
-", "@WebProfiler/Collector/time.css.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
+", "@WebProfiler/Collector/time.css.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Collector/time.css.twig");
     }
 }

@@ -73,6 +73,6 @@ class __TwigTemplate_bbb5d54b13120f31bdaf67349749ea87 extends Template
     <line x1=\"15\" y1=\"16\" x2=\"19\" y2=\"12\"></line>
     <line x1=\"15\" y1=\"8\" x2=\"19\" y2=\"12\"></line>
 </svg>
-", "@WebProfiler/Icon/forward.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/forward.svg");
+", "@WebProfiler/Icon/forward.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/forward.svg");
     }
 }

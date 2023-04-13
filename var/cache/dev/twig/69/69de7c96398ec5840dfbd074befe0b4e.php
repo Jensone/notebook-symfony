@@ -79,6 +79,6 @@ class __TwigTemplate_9b4ca84e8a4617c73d28b20ccd9ce814 extends Template
     <circle cx=\"18.5\" cy=\"18.5\" r=\"1.5\"></circle>
     <circle cx=\"8.5\" cy=\"15.5\" r=\"4.5\"></circle>
 </svg>
-", "@WebProfiler/Icon/http-client.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/http-client.svg");
+", "@WebProfiler/Icon/http-client.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/http-client.svg");
     }
 }

@@ -73,6 +73,6 @@ class __TwigTemplate_29ed00375e4e0593544c05bb71a94df3 extends Template
     <polyline points=\"4 12 12 16 20 12\"></polyline>
     <polyline points=\"4 16 12 20 20 16\"></polyline>
 </svg>
-", "@WebProfiler/Icon/cache.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/cache.svg");
+", "@WebProfiler/Icon/cache.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/cache.svg");
     }
 }

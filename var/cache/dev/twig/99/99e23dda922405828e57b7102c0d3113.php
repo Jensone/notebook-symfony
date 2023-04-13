@@ -79,6 +79,6 @@ class __TwigTemplate_b50e7f662cd143a60d73cb0dfb877209 extends Template
     <path d=\"M17 12h.01\"></path>
     <path d=\"M13 12h.01\"></path>
 </svg>
-", "@WebProfiler/Icon/form.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/form.svg");
+", "@WebProfiler/Icon/form.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/form.svg");
     }
 }

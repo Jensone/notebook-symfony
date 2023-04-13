@@ -194,6 +194,6 @@ class __TwigTemplate_e81cff2a485b4e67e119ce164375c31d extends Template
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/templates/base.html.twig");
+", "base.html.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/templates/base.html.twig");
     }
 }

@@ -77,6 +77,6 @@ class __TwigTemplate_3889d28f5548cd32ccff66469cdc6fcd extends Template
     <path d=\"M9.168 14.828a4 4 0 0 1 0 -5.656\"></path>
     <path d=\"M6.337 17.657a8 8 0 0 1 0 -11.314\"></path>
 </svg>
-", "@WebProfiler/Icon/event.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/event.svg");
+", "@WebProfiler/Icon/event.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/event.svg");
     }
 }

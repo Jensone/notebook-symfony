@@ -75,6 +75,6 @@ class __TwigTemplate_1b94bb93bb7952cf17e78cc4202ddee6 extends Template
     <path d=\"M9 8h4\"></path>
     <path d=\"M9 12h2\"></path>
 </svg>
-", "@WebProfiler/Icon/validator.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/validator.svg");
+", "@WebProfiler/Icon/validator.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/validator.svg");
     }
 }

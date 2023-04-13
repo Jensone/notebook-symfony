@@ -85,6 +85,6 @@ class __TwigTemplate_359e032bc8e7e7ae74ab7bbcc680b87c extends Template
     <line x1=\"18\" y1=\"4\" x2=\"18\" y2=\"5\"></line>
     <line x1=\"18\" y1=\"9\" x2=\"18\" y2=\"20\"></line>
 </svg>
-", "@WebProfiler/Icon/config.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/config.svg");
+", "@WebProfiler/Icon/config.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/config.svg");
     }
 }

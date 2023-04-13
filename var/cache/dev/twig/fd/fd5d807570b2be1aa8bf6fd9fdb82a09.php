@@ -77,6 +77,6 @@ class __TwigTemplate_05b68552476a7921578f7937bcd11457 extends Template
     <rect x=\"12\" y=\"7\" width=\"8\" height=\"4\" rx=\"1\"></rect>
     <rect x=\"12\" y=\"15\" width=\"8\" height=\"4\" rx=\"1\"></rect>
 </svg>
-", "@WebProfiler/Icon/messenger.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/messenger.svg");
+", "@WebProfiler/Icon/messenger.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/messenger.svg");
     }
 }

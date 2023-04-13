@@ -87,6 +87,6 @@ class __TwigTemplate_31b347acdcaf550dd545146a39caf4d1 extends Template
     <path d=\"M14 21v-2\"></path>
     <path d=\"M10 21v-2\"></path>
 </svg>
-", "@WebProfiler/Icon/memory.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook/vendor/symfony/web-profiler-bundle/Resources/views/Icon/memory.svg");
+", "@WebProfiler/Icon/memory.svg", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/vendor/symfony/web-profiler-bundle/Resources/views/Icon/memory.svg");
     }
 }
