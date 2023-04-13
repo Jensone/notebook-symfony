@@ -1,0 +1,71 @@
+body {
+    background-color: #252525;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2em;
+    background: linear-gradient(270deg, #010031, #2f003d, #0e2750);
+    background-size: 600% 600%;
+    -webkit-animation: BackgroundGradient 7s ease infinite;
+    -moz-animation: BackgroundGradient 7s ease infinite;
+    animation: BackgroundGradient 7s ease infinite;
+}
+
+body, .btn-gradient {
+    background: linear-gradient(270deg, #010031, #2f003d, #0e2750);
+    background-size: 600% 600%;
+    -webkit-animation: BackgroundGradient 7s ease infinite;
+    -moz-animation: BackgroundGradient 7s ease infinite;
+    animation: BackgroundGradient 7s ease infinite;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cabin', sans-serif;
+    font-weight: 400;
+}
+
+.title-gradient {
+    background: linear-gradient(90deg, #ffffff, #e0e0e0, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.btn {
+    border-radius: 5em;
+    font-family: 'Cabin', sans-serif;
+}
+
+.btn-gradient, .btn-gradient:hover, .btn-gradient:focus {
+    color: #fff;
+}
+
+.btn-gradient:hover {
+    background:  #ffffff;
+    color: #000;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+}
+
+/* Animation */
+@-webkit-keyframes BackgroundGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes BackgroundGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes BackgroundGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Path: public/assets/css/custom.css */
