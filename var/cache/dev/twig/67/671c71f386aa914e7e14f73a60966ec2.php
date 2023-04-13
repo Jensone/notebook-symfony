@@ -83,6 +83,7 @@ class __TwigTemplate_e81cff2a485b4e67e119ce164375c31d extends Template
         </main>
 
         <script src=\"assets/js/bootstrap.min.js\"></script>
+        <script src=\"assets/js/main.js\"></script>
     </body>
 </html>";
         
@@ -141,7 +142,7 @@ class __TwigTemplate_e81cff2a485b4e67e119ce164375c31d extends Template
 
     public function getDebugInfo()
     {
-        return array (  115 => 23,  97 => 5,  79 => 27,  74 => 24,  72 => 23,  51 => 5,  45 => 1,);
+        return array (  116 => 23,  98 => 5,  79 => 27,  74 => 24,  72 => 23,  51 => 5,  45 => 1,);
     }
 
     public function getSourceContext()
@@ -178,6 +179,7 @@ class __TwigTemplate_e81cff2a485b4e67e119ce164375c31d extends Template
         </main>
 
         <script src=\"assets/js/bootstrap.min.js\"></script>
+        <script src=\"assets/js/main.js\"></script>
     </body>
 </html>", "base.html.twig", "/Users/jensone/Agiliteach/Formations/PHP/Symfony-Prepavenir/notebook-symfony/templates/base.html.twig");
     }

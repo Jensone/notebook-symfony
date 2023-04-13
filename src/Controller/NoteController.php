@@ -11,7 +11,7 @@ class NoteController extends AbstractController
     #[Route('/note', name: 'app_note')]
     public function index(): Response
     {
-        return $this->render('note/index.html.twig', [
+        return $this->render('note/note.html.twig', [
             'controller_name' => 'NoteController',
         ]);
     }

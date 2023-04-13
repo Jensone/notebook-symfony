@@ -34,7 +34,7 @@ class AppFixtures extends Fixture
 
         // Ajoute des catégories à la base de données
         $categories = [
-            'PHP', 'Symfony', 'Doctrine', 'Twig', 'MySQL', 'JavaScript', 'React', 'Vue', 'Angular', 'NodeJS'
+            'Frontend', 'Backend', 'Data', 'UX', 'UI', 'Réseaux', 'Cyber', 'Design', 'API', 'Ressources'
         ];
         $colors = [
             'red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown', 'black', 'white', 'grey', 'cyan', 'magenta', 'lime', 'olive', 'teal', 'navy', 'maroon', 'aqua', 'fuchsia'

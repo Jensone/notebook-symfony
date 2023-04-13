@@ -14,7 +14,11 @@ class HomeController extends AbstractController
     {
         return $this->render('home/home.html.twig', [
             'controller_name' => 'Accueil',
-            'note' => $note->findAll()
+            'note' => $note->findBy(
+                [],
+                ['id' => 'DESC'],
+                6
+            )
         ]);
     }
 }
