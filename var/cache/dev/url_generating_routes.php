@@ -20,6 +20,7 @@ return [
     'app_home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], [], []],
     'app_note' => [[], ['_controller' => 'App\\Controller\\NoteController::index'], [], [['text', '/note']], [], [], []],
     'app_one_note' => [['id'], ['_controller' => 'App\\Controller\\NoteController::getOneNote'], [], [['variable', '/', '[^/]++', 'id', true], ['text', '/note']], [], [], []],
+    'app_update_note' => [[], ['_controller' => 'App\\Controller\\NoteController::updateNote'], [], [['text', '/note/update/']], [], [], []],
     'app_login' => [[], ['_controller' => 'App\\Controller\\SecurityController::login'], [], [['text', '/login']], [], [], []],
     'app_logout' => [[], ['_controller' => 'App\\Controller\\SecurityController::logout'], [], [['text', '/logout']], [], [], []],
 ];

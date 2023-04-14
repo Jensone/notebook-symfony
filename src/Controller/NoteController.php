@@ -31,8 +31,13 @@ class NoteController extends AbstractController
         
         // Affiche la note demandée dans le template dédié
         return $this->render('note/one-note.html.twig', [
-            'oneNote' => $oneNote,
-            // 'note' => $oneNote->findAll()
+            'oneNote' => $oneNote
         ]);
+    }
+
+    #[Route('/note/update/', name: 'app_update_note', methods: ['GET', 'POST'])]
+    public function updateNote($id, NoteRepository $oneNote): Response
+    {
+       
     }
 }

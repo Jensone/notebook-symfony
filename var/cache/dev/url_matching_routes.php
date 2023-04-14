@@ -37,7 +37,10 @@ return [
                         .'|(*:159)'
                     .')'
                 .')'
-                .'|/note/([^/]++)(*:183)'
+                .'|/note/(?'
+                    .'|([^/]++)(*:186)'
+                    .'|update(*:200)'
+                .')'
             .')/?$}sDu',
     ],
     [ // $dynamicRoutes
@@ -48,8 +51,9 @@ return [
         136 => [[['_route' => '_profiler_exception', '_controller' => 'web_profiler.controller.exception_panel::body'], ['token'], null, null, false, false, null]],
         149 => [[['_route' => '_profiler_exception_css', '_controller' => 'web_profiler.controller.exception_panel::stylesheet'], ['token'], null, null, false, false, null]],
         159 => [[['_route' => '_profiler', '_controller' => 'web_profiler.controller.profiler::panelAction'], ['token'], null, null, false, true, null]],
-        183 => [
-            [['_route' => 'app_one_note', '_controller' => 'App\\Controller\\NoteController::getOneNote'], ['id'], ['GET' => 0], null, false, true, null],
+        186 => [[['_route' => 'app_one_note', '_controller' => 'App\\Controller\\NoteController::getOneNote'], ['id'], ['GET' => 0], null, false, true, null]],
+        200 => [
+            [['_route' => 'app_update_note', '_controller' => 'App\\Controller\\NoteController::updateNote'], [], ['GET' => 0, 'POST' => 1], null, true, false, null],
             [null, null, null, null, false, false, 0],
         ],
     ],

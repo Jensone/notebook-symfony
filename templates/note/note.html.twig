@@ -13,6 +13,8 @@
                     <h5 class="card-title">{{ item.title }}</h5>
                     <p class="card-text">{{ item.description }}</p>
                     <a href={{ path('app_one_note', { id: item.id } ) }} class="btn btn-gradient">Voir la note</a>
+                    <a href={{ path('app_update_note', { id: item.id } ) }} class="btn btn-gradient">Modifier</a>
+
                 </div>
             </div>
         </div>
