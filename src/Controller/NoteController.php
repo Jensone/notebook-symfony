@@ -4,7 +4,6 @@ namespace App\Controller;
 
 use App\Repository\NoteRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -24,22 +23,16 @@ class NoteController extends AbstractController
         ]);
     }
 
-    // Route secondaire qui affiche une seule note
-    #[Route('/note/test', name: 'app_one_note', methods: ['GET', 'POST'])]
-    public function getOneNote(
-        NoteRepository $note,
-        Request $request
-        ): Response
+    #[Route('/note/{id}', name: 'app_one_note', methods: ['GET'])]
+    public function getOneNote($id, NoteRepository $oneNote): Response
     {
+        // Récupère la note demandée par son id
+        $oneNote = $oneNote->find($id);
+        
+        // Affiche la note demandée dans le template dédié
         return $this->render('note/one-note.html.twig', [
-            'controller_name' => 'NoteController',
-            'request' => $request->request->get('id'),
-            
-            // Affiche la note demandée
-            'oneNote' => $note->findBy(
-                ['id' => strval($request)]
-                )
-            ]);
-
+            'oneNote' => $oneNote,
+            // 'note' => $oneNote->findAll()
+        ]);
     }
 }

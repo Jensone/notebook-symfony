@@ -12,7 +12,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ item.title }}</h5>
                     <p class="card-text">{{ item.description }}</p>
-                    <a href="{{ path('app_one_note') }}?id={{ item.id }}" class="btn btn-gradient">Voir la note</a>
+                    <a href={{ path('app_one_note', { id: item.id } ) }} class="btn btn-gradient">Voir la note</a>
                 </div>
             </div>
         </div>
@@ -27,8 +27,5 @@
             </div>
         </div>
     {% endfor %}
-    <div class="col-md-12 text-center mb-4">
-        <a class="btn btn-warning" href={{ path('app_note') }}>Voir toutes les notes</a>
-    </div>
 </div>
 {% endblock %}
