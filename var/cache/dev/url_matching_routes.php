@@ -17,6 +17,7 @@ return [
         '/category' => [[['_route' => 'app_category', '_controller' => 'App\\Controller\\CategoryController::index'], null, null, null, false, false, null]],
         '/' => [[['_route' => 'app_home', '_controller' => 'App\\Controller\\HomeController::index'], null, ['GET' => 0], null, false, false, null]],
         '/note' => [[['_route' => 'app_note', '_controller' => 'App\\Controller\\NoteController::index'], null, null, null, false, false, null]],
+        '/note/test' => [[['_route' => 'app_one_note', '_controller' => 'App\\Controller\\NoteController::getOneNote'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
         '/login' => [[['_route' => 'app_login', '_controller' => 'App\\Controller\\SecurityController::login'], null, null, null, false, false, null]],
         '/logout' => [[['_route' => 'app_logout', '_controller' => 'App\\Controller\\SecurityController::logout'], null, null, null, false, false, null]],
     ],

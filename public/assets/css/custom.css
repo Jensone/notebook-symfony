@@ -26,6 +26,11 @@ h6 {
   font-weight: 400;
 }
 
+.nb-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title-gradient {
   background: linear-gradient(90deg, #fff, #fff, #dedede, #fff, #fff);
   -webkit-background-clip: text;
@@ -53,6 +58,34 @@ h6 {
   color: #000;
   border: 1px solid rgba(0, 0, 0, 0.25);
 }
+
+/* Bagdes des catégories */
+.nb-btn:hover {
+  background: #ffffff;
+  color: #000;
+  transition: all 350ms ease-in;
+}
+
+.nb-red { background-color: red;}
+.nb-blue { background-color: blue; color: #fff;}
+.nb-green { background-color: green; color: #fff;}
+.nb-yellow { background-color: yellow;}
+.nb-orange { background-color: orange;}
+.nb-purple { background-color: purple; color: #fff;}
+.nb-pink { background-color: pink;}
+.nb-brown { background-color: brown; color: #fff;}
+.nb-black { background-color: black; color: #fff;}
+.nb-white { background-color: white;}
+.nb-grey { background-color: grey; color: #fff;}
+.nb-cyan { background-color: cyan;}
+.nb-magenta { background-color: magenta;}
+.nb-lime { background-color: lime;}
+.nb-olive { background-color: olive; color: #fff;}
+.nb-teal { background-color: teal; color: #fff;}
+.nb-navy { background-color: navy; color: #fff;}
+.nb-maroon { background-color: maroon; color: #fff;}
+.nb-aqua { background-color: rgb(0, 217, 255);}
+.nb-fuchsia { background-color: rgb(255, 0, 200);}
 
 
 /* Animation */
