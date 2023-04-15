@@ -6,6 +6,9 @@
 /public/bundles/
 /var/
 /vendor/
+/migrations/*
+/tests
+docker-*
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###

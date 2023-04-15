@@ -11,7 +11,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class NoteController extends AbstractController
 {
     // Route qui affiche une note en particulier
-    #[Route('/note/{id}', name: 'app_show_note', methods: ['GET', 'POST'])]
+    #[Route('/note/{id}', name: 'show_note', methods: ['GET', 'POST'])]
     public function show($id, NoteRepository $oneNote): Response
     {
         // Affiche la note demandée dans le template dédié
@@ -19,23 +19,32 @@ class NoteController extends AbstractController
             // Récupère la note demandée par son id
             'oneNote' => $oneNote->findOneBy(
                 ['id' => $id]
-            )
+            ),
+            'note' => $oneNote->findBy(
+                [],
+                ['id' => 'DESC'],
+                3)
         ]);
     }
 
     // Route qui permet de créer une nouvelle note
-    #[Route('note/new', name: 'app_new_note', methods: ['GET', 'POST'])]
-    public function newNote(): Response
+    #[Route('note/new', name: 'new_note', methods: ['GET', 'POST'])]
+    public function newNote()
     {
-        // Création d'une nouvelle note
-        $newNote = new Note();
+        
+    }
 
-        // Création du formulaire
-        $form = $this->createForm(NoteType::class, $newNote);
+    // Route qui permet de modifier une nouvelle note
+    #[Route('note/update', name: 'update_note', methods: ['GET', 'POST'])]
+    public function updateNote()
+    {
+        
+    }
 
-        return $this->render('note/new.html.twig', [
-            'form' => $form
-        ]);
-
+    // Route qui permet de supprimer une nouvelle note
+    #[Route('note/delete', name: 'delete_note', methods: ['GET', 'POST'])]
+    public function deleteNote(): void
+    {
+        
     }
 }

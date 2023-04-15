@@ -10,6 +10,24 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class PageController extends AbstractController
 {
+    #[Route('/', name: 'home', methods: ['GET'])]
+    public function index(NoteRepository $note, CategoryRepository $category): Response
+    {
+        return $this->render('page/home.html.twig', [
+            'controller_name' => 'Accueil',
+
+            // Récupration des 6 dernières notes
+            'note' => $note->findBy(
+                [],
+                ['id' => 'DESC'],
+                9
+            ),
+
+            // Récupération de toutes les catégories
+            'category' => $category->findAll()
+        ]);
+    }
+
     #[Route('/notes', name: 'notes', methods: ['GET'])]
     public function notes(NoteRepository $note): Response
     {
@@ -37,11 +55,12 @@ class PageController extends AbstractController
         ]);
     }
 
-    #[Route('/ressources', name: 'ressources', methods: ['GET'])]
-    public function ressources(CategoryRepository $ressource): Response
+    // TODO: Créer une route pour afficher les ressources
+    #[Route('/resources', name: 'resources', methods: ['GET'])]
+    public function resources(CategoryRepository $resource): Response
     {
-        return $this->render('page/ressources.html.twig', [
-            'ressource' => $ressource->findBy(
+        return $this->render('page/resources.html.twig', [
+            'resource' => $resource->findBy(
                 [],
                 ['id' => 'ASC']
             )

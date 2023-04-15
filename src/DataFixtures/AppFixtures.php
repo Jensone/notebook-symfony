@@ -34,7 +34,7 @@ class AppFixtures extends Fixture
 
         // Ajoute des catégories à la base de données
         $categories = [
-            'Frontend', 'Backend', 'Data', 'UX', 'UI', 'Réseaux', 'Cyber', 'Design', 'API', 'Ressources'
+            'Frontend', 'Backend', 'Data', 'UX', 'UI', 'Réseaux', 'Cyber', 'Design', 'API', 'Agile'
         ];
         $colors = [
             'red', 'blue', 'green', 'yellow', 'orange', 'purple', 'pink', 'brown', 'black', 'white', 'grey', 'cyan', 'magenta', 'lime', 'olive', 'teal', 'navy', 'maroon', 'aqua', 'fuchsia'
@@ -44,7 +44,7 @@ class AppFixtures extends Fixture
         for ($i=0; $i < count($categories); $i++) { 
             $cat = new Category();
             $cat->setTitle($categories[$i])
-            ->setColor($colors[array_rand($colors)]);
+            ->setColor($colors[$i]);
             
             // Ajoute la catégorie à la base de données
             $manager->persist($cat);

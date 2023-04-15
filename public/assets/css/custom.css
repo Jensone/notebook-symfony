@@ -16,6 +16,7 @@ body,
   display: flex;
 }
 
+/* Entete, titres et liens */
 .nav-link li {
   list-style: none;
   margin: 0 0.5em;
@@ -46,8 +47,17 @@ h6 {
 .card-bg {
   background-image: url("../images/texture.svg");
   background-size: contain;
+  transition: all 150ms ease-in;
 }
 
+/* Cards */
+.card-bg:hover {
+  transform: scale(0.95);
+  transition: all 150ms ease-in;
+}
+
+
+/* Boutons personnalisés */
 .btn {
   border-radius: 5em;
   font-family: "Cabin", sans-serif;
@@ -74,6 +84,7 @@ h6 {
 
 .nb-red {
   background-color: red;
+  color: #fff;
 }
 .nb-blue {
   background-color: blue;

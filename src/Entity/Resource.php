@@ -2,12 +2,12 @@
 
 namespace App\Entity;
 
-use App\Repository\RessourceRepository;
+use App\Repository\resourceRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
 
-#[ORM\Entity(repositoryClass: RessourceRepository::class)]
-class Ressource
+#[ORM\Entity(repositoryClass: resourceRepository::class)]
+class Resource
 {
     #[ORM\Id]
     #[ORM\GeneratedValue]
