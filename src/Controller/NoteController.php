@@ -10,20 +10,6 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class NoteController extends AbstractController
 {
-    // Route principale qui affiche toutes les notes
-    #[Route('/note', name: 'app_note')]
-    public function index(NoteRepository $note): Response
-    {
-        return $this->render('note/note.html.twig', [
-            'controller_name' => 'NoteController',
-            // Affiche toutes les notes par ordre décroissant de l'id
-            'note' => $note->findBy(
-                [],
-                ['id' => 'DESC']
-            )
-        ]);
-    }
-
     // Route qui affiche une note en particulier
     #[Route('/note/{id}', name: 'app_show_note', methods: ['GET', 'POST'])]
     public function show($id, NoteRepository $oneNote): Response

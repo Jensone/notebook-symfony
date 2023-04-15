@@ -22,21 +22,26 @@ class PageController extends AbstractController
     }
 
     #[Route('/categories', name: 'categories', methods: ['GET'])]
-    public function categories(CategoryRepository $category): Response
+    public function categories(CategoryRepository $category, NoteRepository $note): Response
     {
         return $this->render('page/categories.html.twig', [
-            'note' => $category->findBy(
+            'category' => $category->findBy(
                 [],
                 ['id' => 'ASC']
+            ),
+            'note' => $note->findBy(
+                [],
+                ['id' => 'ASC'],
+                3
             )
         ]);
     }
 
     #[Route('/ressources', name: 'ressources', methods: ['GET'])]
-    public function ressources(CategoryRepository $category): Response
+    public function ressources(CategoryRepository $ressource): Response
     {
         return $this->render('page/ressources.html.twig', [
-            'note' => $category->findBy(
+            'ressource' => $ressource->findBy(
                 [],
                 ['id' => 'ASC']
             )
