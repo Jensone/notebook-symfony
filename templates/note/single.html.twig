@@ -1,8 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}
-    {{ oneNote.title }} 
-{% endblock %}
+{% block title %}{{ oneNote.title }}{% endblock %}
 
 {% block body %}
     <h1 class="text-white">{{ oneNote.title }}</h1>
@@ -22,7 +20,7 @@
 
     <div class="col-md-12 text-center mb-4">
         <a class="btn btn-warning" href={{ path('app_note') }}>Revenir à toutes les notes</a>
-        <a class="btn btn-primary" href={{ path('app_update_note') }}>Modifier la note</a>
+        {# <a class="btn btn-primary" href={{ path('app_update_note') }}>Modifier la note</a> #}
     </div>
 
 

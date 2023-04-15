@@ -13,11 +13,10 @@ class NoteType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('createdAt')
-            ->add('updatedAt')
+            ->add('description')
             ->add('content')
             ->add('author')
-            ->add('description')
+            ->add('updatedAt')
         ;
     }
 

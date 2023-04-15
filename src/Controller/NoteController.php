@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Note;
 use App\Repository\NoteRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -23,21 +24,32 @@ class NoteController extends AbstractController
         ]);
     }
 
-    #[Route('/note/{id}', name: 'app_one_note', methods: ['GET'])]
-    public function getOneNote($id, NoteRepository $oneNote): Response
+    // Route qui affiche une note en particulier
+    #[Route('/note/{id}', name: 'app_show_note', methods: ['GET', 'POST'])]
+    public function show($id, NoteRepository $oneNote): Response
     {
-        // Récupère la note demandée par son id
-        $oneNote = $oneNote->find($id);
-        
         // Affiche la note demandée dans le template dédié
-        return $this->render('note/one-note.html.twig', [
-            'oneNote' => $oneNote
+        return $this->render('note/single.html.twig', [
+            // Récupère la note demandée par son id
+            'oneNote' => $oneNote->findOneBy(
+                ['id' => $id]
+            )
         ]);
     }
 
-    #[Route('/note/update/', name: 'app_update_note', methods: ['GET', 'POST'])]
-    public function updateNote($id, NoteRepository $oneNote): Response
+    // Route qui permet de créer une nouvelle note
+    #[Route('note/new', name: 'app_new_note', methods: ['GET', 'POST'])]
+    public function newNote(): Response
     {
-       
+        // Création d'une nouvelle note
+        $newNote = new Note();
+
+        // Création du formulaire
+        $form = $this->createForm(NoteType::class, $newNote);
+
+        return $this->render('note/new.html.twig', [
+            'form' => $form
+        ]);
+
     }
 }
