@@ -50,6 +50,12 @@ h6 {
   transition: all 150ms ease-in;
 }
 
+// change tooltip background color
+.tooltip-inner {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 /* Cards */
 .card-bg:hover {
   transform: scale(0.95);

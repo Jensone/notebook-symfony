@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Repository\CategoryRepository;
 use App\Repository\NoteRepository;
+use App\Repository\ResourceRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -56,13 +57,13 @@ class PageController extends AbstractController
     }
 
     // TODO: Créer une route pour afficher les ressources
-    #[Route('/resources', name: 'resources', methods: ['GET'])]
-    public function resources(CategoryRepository $resource): Response
+    #[Route('/ressources', name: 'resources', methods: ['GET'])]
+    public function resources(ResourceRepository $resource): Response
     {
-        return $this->render('page/resources.html.twig', [
+        return $this->render('page/ressources.html.twig', [
             'resource' => $resource->findBy(
                 [],
-                ['id' => 'ASC']
+                ['id' => 'DESC']
             )
         ]);
     }

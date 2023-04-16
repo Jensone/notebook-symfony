@@ -6,9 +6,10 @@
 /public/bundles/
 /var/
 /vendor/
-/migrations/*
+/migrations/Version*.php
 /tests
-docker-*
+docker-compose.yml
+docker-compose.override.yml
 ###< symfony/framework-bundle ###
 
 ###> phpunit/phpunit ###
