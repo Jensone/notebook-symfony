@@ -2,15 +2,24 @@
 
 namespace App\DataFixtures;
 
-use App\Entity\Category;
 use App\Entity\Note;
-use Doctrine\Bundle\FixturesBundle\Fixture;
+use App\Entity\User;
+use App\Entity\Category;
 use Doctrine\Persistence\ObjectManager;
+use Doctrine\Bundle\FixturesBundle\Fixture;
 
 class AppFixtures extends Fixture
 {
     public function load(ObjectManager $manager): void
     {
+        // Ajoute un utilisateur Admin à la base de données
+        $admin = new User();
+        $admin->setEmail('admin@admin.com')
+        ->setRoles(["ROLE_ADMIN"])
+        ->setPassword('$2y$13$7fN937SZnbxDpxw/55SVPuvJlQY/vTYOmPS0m7L4LLTVK9Kn1y3VW');
+
+        // Ajoute l'utilisateur à la base de données
+        $manager->persist($admin);
 
         // Ajoute des notes à la base de données
         $technos = [

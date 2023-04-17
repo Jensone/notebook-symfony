@@ -22,3 +22,4 @@ docker-compose.override.yml
 /phpunit.xml
 ###< symfony/phpunit-bridge ###
 node_modules
+1
