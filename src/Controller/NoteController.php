@@ -46,15 +46,15 @@ class NoteController extends AbstractController
 
     }
 
-    // Route qui permet de modifier une nouvelle note
-    #[Route('note/update', name: 'update_note', methods: ['GET', 'POST'])]
+    // Route qui permet de modifier une note
+    #[Route('update-note', name: 'update_note', methods: ['GET', 'POST'])]
     public function updateNote(NoteRepository $note)
     {
         
     }
 
-    // Route qui permet de supprimer une nouvelle note
-    #[Route('note/delete', name: 'delete_note', methods: ['GET', 'POST'])]
+    // Route qui permet de supprimer une note
+    #[Route('delete-note', name: 'delete_note', methods: ['GET', 'POST'])]
     public function deleteNote(NoteRepository $note): void
     {
         

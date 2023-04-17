@@ -60,6 +60,11 @@ h6 {
   transition: all 150ms ease-in;
 }
 
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
 
 /* Boutons personnalisés */
 .btn {
