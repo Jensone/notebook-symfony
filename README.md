@@ -29,7 +29,7 @@ AppFixtures :
 Security Bundle :
 
 ```bash
-    composer require security
+    composer require symfony/security-bundle
 ```
 Validator :
 
