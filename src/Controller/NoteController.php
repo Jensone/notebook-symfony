@@ -3,8 +3,10 @@
 namespace App\Controller;
 
 use App\Entity\Note;
+use App\Form\NoteType;
 use App\Repository\NoteRepository;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -28,11 +30,18 @@ class NoteController extends AbstractController
     }
 
     // Route qui permet de créer une nouvelle note
-    #[Route('note/new', name: 'new_note', methods: ['GET', 'POST'])]
-    public function newNote(NoteRepository $note)
+    #[Route('/new-note', name: 'new_note', methods: ['GET', 'POST'])]
+    public function newNote(Request $request)
     {
+        $oneNote = new Note();
+
+        $oneNote = $this->createForm(NoteType::class, $oneNote);
+
         return $this->render('note/new.html.twig', [
-            'controller_name' => 'NoteController'
+            'controller_name' => 'NoteController',
+            // Formulaire de création de note
+            'form' => $oneNote->createView()
+
         ]);
 
     }

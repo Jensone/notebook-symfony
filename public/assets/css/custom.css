@@ -43,20 +43,18 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
-.hero,
+/* Hero */
+.hero {
+  background: linear-gradient(90deg, #fff, #fefcf3);
+}
+
+/* Cards */
 .card-bg {
-  background-image: url("../images/texture.svg");
+  background-image: url("../images/paper-bg.jpeg");
   background-size: contain;
   transition: all 150ms ease-in;
 }
 
-// change tooltip background color
-.tooltip-inner {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-/* Cards */
 .card-bg:hover {
   transform: scale(0.95);
   transition: all 150ms ease-in;
