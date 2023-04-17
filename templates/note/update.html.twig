@@ -1,10 +1,45 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Modifier la note{% endblock %}
+{% block title %}Modification de note{% endblock %}
 
 {% block body %}
 
+<h1 class="text-white mb-4">Modification de la note :</h1>
 
+<h3 class="text-white">{{ note.title }}</h3>
+
+<form class="card p-4">
+    {{ form_start(form) }}
+        <div class="my-custom-class-for-errors">
+            {{ form_errors(form) }}
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-8">
+                <label for="" class="form-label">{{ form_label(form.title) }}</label>
+                {{ form_widget(form.title, {'attr': {'class': 'form-control'}}) }}
+            </div>
+            <div class="col-md-4">
+                <label for="" class="form-label">{{ form_label(form.author) }}</label>
+                {{ form_widget(form.author, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label for="" class="form-label">{{ form_label(form.description) }}</label>
+                {{ form_widget(form.description, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12">
+                <label for="" class="form-label">{{ form_label(form.content) }}</label>
+                {{ form_widget(form.content, {'attr': {'class': 'form-control'}}) }}
+            </div>
+        </div>
+    {{ form_end(form) }}
+</form>
 
 
 {% endblock %}

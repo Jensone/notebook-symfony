@@ -8,6 +8,10 @@
 
 	<p class="text-white fs-5">Voici toutes les notes disponibes</p>
 
+	<div class="col-md-12 mb-4">
+		<a class="btn btn-warning" href={{ path('new_note') }}>Ajouter une note</a>
+	</div>
+
 	<div class="row mt-5">
 		{% for item in note %}
 			<div class="shadow col-md-4 mb-4">

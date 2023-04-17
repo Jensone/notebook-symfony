@@ -8,11 +8,25 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class CategoryController extends AbstractController
 {
-    #[Route('/category', name: 'app_category')]
-    public function index(): Response
+    // Route qui permet de créer une nouvelle catégorie
+    #[Route('/new-categorie', name: 'new_category', methods: ['GET', 'POST'])]
+    public function newCategory()
     {
-        return $this->render('category/category.html.twig', [
-            'controller_name' => 'CategoryController',
-        ]);
+
+    }
+
+    
+    // Route qui permet de modifier une categorie
+    #[Route('/update-categorie', name: 'update_category', methods: ['GET', 'POST'])]
+    public function updateCategory()
+    {
+
+    }
+
+    // Route qui permet de supprimer une catégorie
+    #[Route('delete-categorie', name: 'delete_category', methods: ['GET', 'POST'])]
+    public function deleteCategory(): void
+    {
+        
     }
 }

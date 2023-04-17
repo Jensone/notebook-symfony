@@ -8,6 +8,10 @@
 
 	<p class="text-white fs-5">Voici toutes les catégories disponibes</p>
 
+	<div class="col-md-12 mb-4">
+		<a class="btn btn-warning" href={{ path('new_category') }}>Ajouter une categorie</a>
+	</div>
+
 	<div class="row mt-5">
 		{% for item in category %}
 			<div class="shadow col-md-3 mb-4">
