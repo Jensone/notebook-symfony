@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Repository\CategoryRepository;
 use App\Repository\NoteRepository;
 use App\Repository\ResourceRepository;
+use App\Service\NewsPaper;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -12,7 +13,11 @@ use Symfony\Component\Routing\Annotation\Route;
 class PageController extends AbstractController
 {
     #[Route('/', name: 'home', methods: ['GET'])]
-    public function index(NoteRepository $note, CategoryRepository $category): Response
+    public function index(
+        NoteRepository $note, 
+        CategoryRepository $category,
+        NewsPaper $news
+        ): Response
     {
         return $this->render('page/home.html.twig', [
             'controller_name' => 'Accueil',
@@ -25,7 +30,8 @@ class PageController extends AbstractController
             ),
 
             // Récupération de toutes les catégories
-            'category' => $category->findAll()
+            'category' => $category->findAll(),
+
         ]);
     }
 
@@ -56,7 +62,6 @@ class PageController extends AbstractController
         ]);
     }
 
-    // TODO: Créer une route pour afficher les ressources
     #[Route('/ressources', name: 'resources', methods: ['GET'])]
     public function resources(ResourceRepository $resource): Response
     {
@@ -64,7 +69,17 @@ class PageController extends AbstractController
             'resource' => $resource->findBy(
                 [],
                 ['id' => 'DESC']
-            )
-        ]);
+                )
+            ]);
+    }
+
+    // TODO: Créer une route pour afficher les news
+    #[Route('/veille', name: 'news', methods: ['GET'])]
+    public function news(NewsPaper $newsPaper): Response
+    {
+        return $this->render('page/news.html.twig', [
+                'news' => $newsPaper->getNews('technology'),
+            ]);
     }
 }
+    
